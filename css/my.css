@@ -365,6 +365,7 @@ hr{
 	width: 50px;
 	float: left;
 	border-radius: 7px;
+	opacity:0.4;
 }
 .add_word{/*左边导航栏内容*/
 	line-height: 50px;

@@ -30,10 +30,16 @@
 			$(this).css({
 				zoom: '125%'
 			});
+			$(this).children(".add_img").css({
+				opacity: '1',
+			});
 		});
 		$(".add_message").mouseout(function(){
 			$(this).css({
 				zoom: '100%'
+			});
+			$(this).children(".add_img").css({
+				opacity: '0.4',
 			});
 		});
 	})
