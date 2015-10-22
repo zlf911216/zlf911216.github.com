@@ -1,0 +1,11 @@
+.right_num{
+	position: fixed;
+	right: 0;
+	top: 50%;
+	width: 30px;
+	height: 500px;
+	margin-top: -250px;
+	background: red;
+	border-bottom-left-radius: 18px;
+	border-top-left-radius: 18px;
+}

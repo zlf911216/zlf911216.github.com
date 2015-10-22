@@ -1,0 +1,380 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:url(img/1.5.jpg);
+	background-size: 100% 100%;
+	background-repeat:no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+::-webkit-scrollbar {/*滚动条*/
+ width: 8px;
+}
+::-webkit-scrollbar-track {/*滚动条*/
+ -webkit-border-radius: 2em;
+ -moz-border-radius: 2em;
+ border-radius:2em;
+}
+::-webkit-scrollbar-thumb {/*滚动条*/
+ background-color:rgba(0,0,0,0.6);
+ -webkit-border-radius: 2em;
+ -moz-border-radius: 2em;
+ border-radius:2em;
+}
+.time{
+	zoom:115%;
+}
+.time-hours{/*时间*/
+	width:auto;
+	height:65px;
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	margin-left: -95px;
+}
+.time-hours p{/*时间*/
+	float:left;
+	line-height:70px;
+	text-align: center;
+	vertical-align: middle;
+	font-size:70px;
+	font-family: "楷体";
+}
+.time-hours h3{/*时间*/
+	float:left;
+	line-height:58px;
+	text-align: center;
+	vertical-align: middle;
+	font-size:58px;
+}
+.time-years{/*时间*/
+	width:auto;
+	height:18px;
+	position: absolute;
+	top:135px;
+	left: 50%;
+	margin-left: -69px;
+}
+.time-years p,.time-years h3{/*时间*/
+	float: left;
+	line-height: 18px;
+	vertical-align: middle;	
+	font-size: 18px;
+	font-family: "楷体";
+}
+.time-weeks{/*时间*/
+	width:auto;
+	height:18px;
+	position: absolute;
+	top:160px;
+	left: 50%;	
+	margin-left: -29px;
+}
+.time-weeks p,h3{/*时间*/
+	float: left;
+	line-height: 18px;
+	vertical-align: middle;	
+	font-size: 18px;
+	font-family: "楷体";
+}
+.circle_th{/*中间锁定栏*/
+	position: absolute;
+	height: 108px;
+	width: 108px;
+	left: 50%;
+	top: 50%;
+	margin-left: -55px;
+	margin-top: -55px;
+	border-radius: 55px;
+	border: 1px solid white;
+	opacity: 0.6;
+}
+.circle_tw{/*中间锁定栏*/
+	position: absolute;
+	height: 88px;
+	width: 88px;
+	left: 50%;
+	top: 50%;
+	margin-left: -45px;
+	margin-top: -45px;
+	border-radius: 45px;
+	border: 1px solid white;
+	opacity: 0.6;
+}
+.circle_on{/*中间锁定栏*/
+	position: absolute;
+	height: 68px;
+	width: 68px;
+	left: 50%;
+	top: 50%;
+	margin-left: -35px;
+	margin-top: -35px;
+	border-radius: 35px;
+	border: 1px solid white;
+	opacity: 0.6;
+}
+.circle_open{/*中间锁定栏*/
+	position: absolute;
+	height: 28px;
+	width: 28px;
+	left: 50%;
+	top: 50%;
+	margin-left: -26px;
+	margin-top: -26px;
+	border-radius: 100px;
+	border: 12px solid white;
+	z-index: 999;
+	cursor: -webkit-grab; cursor: -moz-grab; cursor: grab;
+}
+.circle_final{/*中间锁定栏*/
+	position: absolute;
+	height: 186px;
+	width: 186px;
+	left: 50%;
+	top: 50%;
+	margin-left: -95px;
+	margin-top: -95px;
+	border-radius: 95px;
+	border: 2px solid white;
+	display: none;
+}
+.word{/*中间锁定文字*/
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 18px;
+	width: auto;
+	margin-left: -53px;
+	margin-top: 130px;
+	text-align: center;
+	vertical-align: middle;
+
+}
+.word p{/*中间锁定文字*/
+	line-height: 18px;
+	font-family: "楷体";
+	vertical-align: middle;	
+	text-align: center;
+	font-size: 18px;
+	font-weight: 200;
+	color: white;
+	text-shadow: -3px 0 4px black; 
+}
+.lock_1,.message_1,.travel_1,.search_1{/*中间解锁图片*/
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	border-radius: 15px;
+	outline:none;
+	border-color:rgba(255,226,60,0.5);
+	box-shadow:0 0 20px 10px rgba(255,226,60,0.5);
+	display: none;
+}
+.lock_2,.message_2,.travel_2,.search_2{/*中间解锁图片*/
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	border-radius: 8px;
+	outline:none;
+	border-color:rgba(255,226,60,0.5);
+	box-shadow:0 0 20px 10px rgba(255,226,60,0.5) inset;
+	display: none;
+}
+.lock{/*中间解锁图片*/
+	position: absolute;
+	background-image: url("img/lock.png");
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	height: 26px;
+	width: 26px;
+	left: 50%;
+	top: 50%;
+	margin-left: -14px;
+	margin-top: 100px;
+	display: none;
+	z-index: 99;
+}
+.message{/*中间文章图片*/
+	position: absolute;
+	background-image: url("img/message.png");
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	height: 26px;
+	width: 26px;
+	left: 50%;
+	top: 50%;
+	margin-left: 100px;
+	margin-top: -13px;
+	display: none;
+	border-radius: 6px;
+}
+.travel{/*中间游记图片*/
+	position: absolute;
+	background-image: url("img/travel.png");
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	height: 26px;
+	width: 26px;
+	left: 50%;
+	top: 50%;	
+	margin-left: -126px;
+	margin-top: -16px;
+	display: none;
+	border-radius: 6px;
+}
+.search{/*中间搜寻图片*/
+	position: absolute;
+	background-image: url("img/look.png");
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	height: 26px;
+	width: 26px;
+	left: 50%;
+	top: 50%;
+	margin-left: -13px;
+	margin-top: -126px;
+	display: none;
+	border-radius: 6px;
+}
+.active_word{/*中间解锁文字*/
+	position: absolute;
+	height: 50px;
+	width: 100px;
+	text-align: center;
+	line-height: 50px;
+	vertical-align: middle;
+	font-size: 50px;
+	font-weight: 550;
+	font-family: "楷体";
+	left: 50%;
+	top: 50%;
+	margin-left: -50px;
+	margin-top: -25px;
+	color: white;
+}
+.left_menu{/*左边导航栏*/
+	position: absolute;
+	height: 600px;
+	width: 230px;
+	top:50%;
+	left: -238px;
+	margin-top: -300px;
+	background:inherit;
+	background-repeat:no-repeat;
+}
+.left_menu_btn{/*左边导航栏展开*/
+	position: absolute;
+	height: 100%;
+	width: 22px;
+	right: -20px;
+	background: rgba(255,255,255,0.8);
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	line-height: 700px;
+	font-size: 16px;
+	font-weight: 800;
+	-webkit-filter: blur(2px); -moz-filter: blur(2px); filter: blur(2px); 
+    cursor: -webkit-grab; cursor: -moz-grab; cursor: grab;
+    z-index: 98;
+    display: none;
+}
+.left_menu_btn_2{/*左边导航栏展开*/
+	position: absolute;
+	top:50%;
+	left:100%;
+	cursor: -webkit-grab; cursor: -moz-grab; cursor: grab;
+	font-weight: 800;
+	margin-top: -10px;
+	z-index: 99;
+	line-height: 30px;
+	display: none;
+}
+.under_img{/*左边导航栏模糊效果*/
+	height: 100%;
+	width: 100%;
+	-webkit-filter: blur(8px); -moz-filter: blur(8px); filter: blur(8px); 
+	background:inherit;
+	background-repeat:no-repeat;
+}
+.menu_message{/*左边导航栏内容*/
+	width: 100%; 
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.menu_message_one,.menu_message_two{/*左边导航栏内容*/
+	height: 40px;
+	width: 100%;
+	text-align: left;
+	vertical-align: middle;
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 400;
+	font-family: "楷体";
+	cursor: -webkit-pointer; cursor: -moz-pointer; cursor: pointer;
+}
+.menu_message_one_img{/*左边导航栏图片*/
+	height: 40px;
+	width: 40px;
+	float: left;
+	background: url(img/travel_img.png) no-repeat;
+	background-size: 100% 100%;
+
+}
+.menu_message_one_word{/*左边导航栏文字*/
+	height: 40px;
+	width: auto;
+	float: left;
+}
+.menu_message_two_img{/*左边导航栏图片*/
+	height: 40px;
+	width: 40px;
+	float: left;
+	background: url(img/message_img.png) no-repeat;
+	background-size: 100% 100%;
+}
+.menu_message_two_word{/*左边导航栏文字*/
+	height: 40px;
+	width: auto;
+	float: left;
+}
+hr{
+	 height:3px;border:none;border-top:3px double white;
+}
+.list_one,.list_two{/*左边导航栏内容*/
+	width: 100%;
+	height: 360px;
+	overflow-y:auto; 
+	overflow-x:hidden;
+	display: none;
+}
+.travel_message li,.message_message li{/*左边导航栏内容*/
+	width: 220px;
+	height: 50px;
+	margin-bottom: 1px;
+	list-style: none;
+	border:2px solid black;
+	border-radius: 7px;
+	cursor: -webkit-pointer; cursor: -moz-pointer; cursor: pointer;
+	
+}
+.add_img{/*左边导航栏内容*/
+	height: 50px;
+	width: 50px;
+	float: left;
+	border-radius: 7px;
+}
+.add_word{/*左边导航栏内容*/
+	line-height: 50px;
+	height: 50px;
+	font-size: 20px;
+	width: 170px;
+	float: left;
+	overflow:hidden; 
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	font-family: "楷体";
+	font-weight: 300;
+}
