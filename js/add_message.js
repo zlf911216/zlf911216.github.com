@@ -1,5 +1,5 @@
 	$.ajax({
-		url: 'message_json/new_add.json',
+		url: 'https://github.com/zlf911216/zlf911216.github.com/blob/master/message_json/new_add.json',
 		type: 'POST',
 		dataType:'json',
 		data: {param1: 'value1'},
