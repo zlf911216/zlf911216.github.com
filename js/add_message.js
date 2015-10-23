@@ -1,6 +1,6 @@
 	$.ajax({
 		url: 'message_json/new_add.json',
-		type: 'POST',
+		type: 'GET',
 		dataType:'json',
 		data: {param1: 'value1'},
 	})
