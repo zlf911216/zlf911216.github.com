@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 }
-.right_num{
+.right_num{/*右侧导航栏*/
 	position: fixed;
 	right: 0;
 	top: 50%;
@@ -14,18 +14,18 @@
 	border-top-left-radius: 18px;
 	z-index: 999;
 }
-.num_box:first-of-type{
+.num_box:first-of-type{/*右侧导航栏按钮*/
 	margin-top: 10px;
 }
-.num_box:last-of-type{
+.num_box:last-of-type{/*右侧导航栏按钮*/
 	margin-bottom: 10px;
 }
-.num_box{
+.num_box{/*右侧导航栏按钮*/
 	height: 40px;
 	width: 40px;
 	position: relative;
 }
-.num{
+.num{/*右侧导航栏按钮*/
 	position: absolute;
 	border: 2px solid;
 	height: 14px;
@@ -37,16 +37,16 @@
 	z-index: 999;
 	opacity: 0.8
 }
-.fullpage{
+.fullpage{/*可视区域*/
 	width: 100%;
 	overflow: hidden;
 }
-.section{
+.section{/*图片区域*/
 	width: 100%;
 	background-position: center center;	
 	position: relative;
 }
-.under_img{
+.under_img{/*图片区域图片*/
 	width: 100%;
 	height: 80px;
 	position: absolute;
@@ -55,7 +55,7 @@
 	-webkit-filter: blur(8px); -moz-filter: blur(8px); filter: blur(8px); 
 	border-radius: 10px;
 }
-.word{
+.word{/*图片区域下部文字*/
 	position: absolute;
 	width: 100%;
 	height: 80px;
@@ -66,12 +66,182 @@
 	border-radius: 10px;
 	overflow: hidden;
 }
-.second_section{
+.all_box{/*到达最上或者最下后提示*/
+	position: fixed;
+	height: 100%;
 	width: 100%;
-	height: 1200px;
-	background:url(img/1.2.jpg);
-	background-size: 100% 100%;	
-	background-position: center center;	
-	background-attachment: fixed;
-	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 1200;
+	background: rgba(255,255,255,0.4);
+	display: none;
+	
+}
+.alert_box{/*到达最上或者最下后提示*/
+	position: fixed;
+	top:50%;
+	left: 50%;
+	height: 160px;
+	width: 380px;
+	margin-left: -190px;
+	margin-top: -80px;
+	background:rgba(0,0,0,0.7);
+	border-radius: 25px;
+	z-index: 1201;
+	display: none;
+}
+.alert_top{/*到达最上或者最下后提示*/
+	position: absolute;
+	width: 100%;
+	height: 25px;
+	background: rgba(255,255,255,0.9);
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 25px;
+	font-size: 20px;
+	font-weight: 800;
+	font-family: "宋体";
+	display: none;
+}
+.alert_word{/*到达最上或者最下后提示*/
+	position: absolute;
+	width: 180px;
+	height: 50px;
+	color: white;
+	top: 50%;
+	left: 50%;
+	margin-top: -15px;
+	margin-left: -90px;
+	line-height: 50px;
+	font-size: 30px;
+	text-align: center;
+	vertical-align: middle;
+	font-family: "楷体";
+	display: none;
+}
+.left_menu{/*左边导航栏*/
+	position: fixed;
+	height: 600px;
+	width: 230px;
+	top:50%;
+	left: -238px;
+	margin-top: -300px;
+	background:rgba(0,0,0,0.3);
+	z-index: 999;
+}
+.left_menu_btn{/*左边导航栏展开*/
+	position: absolute;
+	height: 100%;
+	width: 22px;
+	right: -20px;
+	background: rgba(255,255,255,0.7);
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	line-height: 700px;
+	font-size: 16px;
+	font-weight: 800;
+	-webkit-filter: blur(2px); -moz-filter: blur(2px); filter: blur(2px); 
+    cursor: -webkit-grab; cursor: -moz-grab; cursor: grab;
+    z-index: 98;
+}
+.left_menu_btn_2{/*左边导航栏展开*/
+	position: absolute;
+	top:50%;
+	left:100%;
+	cursor: -webkit-grab; cursor: -moz-grab; cursor: grab;
+	font-weight: 800;
+	margin-top: -10px;
+	z-index: 99;
+	line-height: 30px;
+}
+.left_under_img{/*左边导航栏模糊效果*/
+	height: 100%;
+	width: 100%;
+	-webkit-filter: blur(8px); -moz-filter: blur(8px); filter: blur(8px); 
+	background:inherit;
+	background-repeat:no-repeat;
+}
+.menu_message{/*左边导航栏内容*/
+	width: 100%; 
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.menu_message_one,.menu_message_two{/*左边导航栏内容*/
+	height: 40px;
+	width: 100%;
+	text-align: left;
+	vertical-align: middle;
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 400;
+	font-family: "楷体";
+	color: white;
+	cursor: -webkit-pointer; cursor: -moz-pointer; cursor: pointer;
+}
+.menu_message_one_img{/*左边导航栏图片*/
+	height: 40px;
+	width: 40px;
+	float: left;
+	background: url(img/travel_img.png) no-repeat;
+	background-size: 100% 100%;
+
+}
+.menu_message_one_word{/*左边导航栏文字*/
+	height: 40px;
+	width: auto;
+	float: left;
+}
+.menu_message_two_img{/*左边导航栏图片*/
+	height: 40px;
+	width: 40px;
+	float: left;
+	background: url(img/message_img.png) no-repeat;
+	background-size: 100% 100%;
+}
+.menu_message_two_word{/*左边导航栏文字*/
+	height: 40px;
+	width: auto;
+	float: left;
+}
+hr{
+	 height:3px;border:none;border-top:3px double white;
+}
+.list_one,.list_two{/*左边导航栏内容*/
+	width: 100%;
+	height: 360px;
+	overflow-y:auto; 
+	overflow-x:hidden;
+	display: none;
+}
+.travel_message li,.message_message li{/*左边导航栏内容*/
+	width: 220px;
+	height: 50px;
+	margin-bottom: 1px;
+	list-style: none;
+	border:2px solid black;
+	border-radius: 7px;
+	cursor: -webkit-pointer; cursor: -moz-pointer; cursor: pointer;	
+}
+.add_img{/*左边导航栏内容*/
+	height: 50px;
+	width: 50px;
+	float: left;
+	border-radius: 7px;
+	opacity:0.4;
+}
+.add_word{/*左边导航栏内容*/
+	line-height: 50px;
+	height: 50px;
+	font-size: 20px;
+	width: 170px;
+	float: left;
+	overflow:hidden; 
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	font-family: "楷体";
+	font-weight: 300;
+	color: white;
 }
